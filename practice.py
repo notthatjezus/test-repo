@@ -1,14 +1,10 @@
-def to_switch_tongle():
-    tongle = ""
-    if tongle == True:
-        print("switch off")
-        tongle = False
-    else:
-        print("switch on")
-        tongle = True
+toggle_state = "off"
+
+def toggle():
+    global toggle_state
+    toggle_state = "off" if toggle_state == "on" else "on"
+    return toggle_state
         
-
-
-to_switch_tongle()
-to_switch_tongle()
-to_switch_tongle()
+        
+print(toggle())
+print(toggle())
